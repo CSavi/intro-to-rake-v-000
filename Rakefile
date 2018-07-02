@@ -11,7 +11,7 @@ desc 'outputs hola to the terminal'
 end
 
 namespace :db do
-#  desc 'run before the migrate task'
+  desc 'run before the migrate task'
   task :environment do
     require_relative './config/enviornment'
   end
