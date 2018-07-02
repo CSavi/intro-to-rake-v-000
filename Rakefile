@@ -8,9 +8,10 @@ desc 'outputs hola to the terminal'
   task :hola do
     puts "hola de Rake!"
   end
-end   
+end
 
 namespace :db do
+  desc 'run before the migrate task'
   task :enviornment do
     require_relative './config/enviornment'
   end
